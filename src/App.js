@@ -6,12 +6,12 @@ import TextForm from "./Components/TextForm";
 import React,{useState} from 'react'
 import Alert from "./Components/Alert";
 // import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -46,25 +46,25 @@ function App() {
   return (
     <>
       {/* <Navbar title = "TextUtils" aboutText = "About us"/> */}
-      <Router>
+      {/* <Router> */}
       <Navbar title = "TextUtils" Mode = {Mode} toggleMode={toggleMode} />
       <Alert alert={alert}/>
       <div className="container my-3">
         
-      <Switch>
-          <Route path="/about">
+      {/* <Switch> */}
+          {/* <Route path="/about">
             <About Mode = {Mode}/>
-          </Route>
+          </Route> */}
           
           
-          <Route exact path="/">
+          {/* <Route exact path="/"> */}
         <TextForm  showAlert={showAlert} heading = "Try TextUtils- Word Counter, Character Counter, Remove extra Space" Mode = {Mode} />
 
             
-          </Route>
-        </Switch>
+          {/* </Route> */}
+        {/* </Switch> */}
         </div>
-        </Router>
+        {/* </Router> */}
         
         {/* <About/> */}
 
